@@ -26,6 +26,7 @@ There are two things to keep in mind when using JSX:
 
 * a JSX template is a tree and as such it must have a single root element. If your rendering function returns several elements, you'll have to put them in a single top-level element like a `<div>`.
 * a JSX expression is just syntactic sugar that is transformed at build time into a JavaScript expression. This means that if you want to have a newline between a `return` statement and the JSX expression for readability, you must surround the JSX expression with parentheses. Otherwise, as stated in the ECMAScript standard, Automatic Semicolon Insertion will insert a semicolon before your expression, because there should not be a line terminator between a `return` statement and its value (if it has one).
+* when you generate a list of elements, each element should have a `key` property with a distinct value, for performance reasons. If you don't do that, the code will still compile, but you'll see warnings in the console.
 
 Fix the code below to follow these rules:
 
@@ -35,11 +36,11 @@ Fix the code below to follow these rules:
   "project": "counter"
 })
 
-There are other requirements, like having to have a `key` attribute on `<li>` elements for performance reasons, or restrictions regarding attribute names (you cannot use an attribute named `for` for the obvious reason that this is a JavaScript keyword), but we will not cover them here.
+There are also restrictions regarding attribute names (you cannot use an attribute named `for` for the obvious reason that this is a JavaScript keyword), but we will not cover them here.
 
 # Properties
 
-Components can have immutable state in the form of read-only properties, also known as *props*. To have props, a component declares an additional `props` argument that is a plain old JavaScript object. Property names and associated values of props are specified in JSX with the `name="value"` syntax when the component is instantiated.
+Components can have immutable state in the form of read-only properties, also known as *props*. To have props, a component declares an additional `props` argument that is a plain old JavaScript object. Property names and associated values of props are specified in JSX with the `name=value` syntax when the component is instantiated. The value must be either a string (in quotes) or a JavaScript value in braces.
 
 In the example below, add an initial value to the counter with props:
 
@@ -49,7 +50,16 @@ In the example below, add an initial value to the counter with props:
   "project": "counter"
 })
 
+So far, so good. But how do we check that the user of our component has indeed set a value for our property, and with the right type?
+
 # Property types
+
+Property types allow us to do exactly that.
+Counter.propTypes = {
+  value: PropTypes.number.isRequired,
+  onIncrement: PropTypes.func.isRequired,
+  onDecrement: PropTypes.func.isRequired
+}
 
 TODO: show an example of props destructured directly?
 
