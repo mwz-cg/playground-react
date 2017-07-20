@@ -54,16 +54,35 @@ So far, so good. But how do we check that the user of our component has indeed s
 
 # Property types
 
-Property types allow us to do exactly that.
-Counter.propTypes = {
-  value: PropTypes.number.isRequired,
-  onIncrement: PropTypes.func.isRequired,
-  onDecrement: PropTypes.func.isRequired
-}
+Enter property types. When the `propTypes` attribute is set on a component, it specifies the type of each property that a component accepts, and whether it is required. A required property with no value, or with a value of the wrong type, will show a warning in the browser console.
 
-TODO: show an example of props destructured directly?
+Fix the following code to remove warnings:
+
+@[Hello World app]({
+  "stubs": ["src/counter-with-prop-types.js"],
+  "command": "yarn techio-start -- counter-with-prop-types",
+  "project": "counter"
+})
+
+# Default property values
+
+Props can have default values. This allows a component to have properties that are required, but whose value may be omitted when instantiating the component.
+
+Fix the code below to add a default value to `initialCount` to remove the warning:
+
+@[Hello World app]({
+  "stubs": ["src/counter-with-default-props.js"],
+  "command": "yarn techio-start -- counter-with-default-props",
+  "project": "counter"
+})
+
+# Event handling
+
+Until now the buttons in our counter had no effect. In the following example, we will add event handlers to the plus and minus buttons:
 
 # Components with class
+
+So far we've
 
 # State
 
