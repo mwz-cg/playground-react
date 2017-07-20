@@ -90,9 +90,21 @@ Fix the code to handle clicks on the buttons to call the event handler.
 
 # Components with class
 
-So far we've only dealt with so-called *functional components*. Our counter is indeed a pure function that take inputs (initial count, labels) and returns a virtual DOM with a paragraph and buttons. What we would like, though, rather than just printing in the console when the user increments/decrements the counter, is to store and print the current value of the counter. For that, we will need to have a current state.
+So far we've only dealt with so-called *functional components*. Our counter is indeed a pure function that take inputs (initial count, labels) and returns a virtual DOM with a paragraph and buttons. What we would like, though, rather than just printing in the console when the user increments/decrements the counter, is to store and print the current value of the counter. For that, we will need to define a component that can have a state.
+
+A stateful component is typically defined as a class extending `React.Component` and implementing a `render` method that returns the virtual DOM for that component. To have state, the constructor of that component defines a state variable with the properties that we will use.
+
+Add a `count` property to the state of the component in the code below.
+
+@[Hello World app]({
+  "stubs": ["src/counter-class.js"],
+  "command": "yarn techio-start -- counter-class",
+  "project": "counter"
+})
 
 # State
+
+To update the counter
 
 # Reference
 
