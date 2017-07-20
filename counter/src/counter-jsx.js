@@ -1,26 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function HelloWorld() {
-  let items =
-    [{label: 'Choice A', value: 'a'},
-    {label: 'Choice B', value: 'b'},
-    {label: 'Choice C', value: 'c'}];
-
-  return (
-    <div>
-      <h1>Hello, world!</h1>
-      <form>
-        {
-          items.map(item =>
-            <label key={item.value}>{item.label}
-              <input type="radio" name="choices" value={item.value} />
-            </label>
-          )
-        }
-      </form>
-    </div>
-  );
+function Counter() {
+  // FIXME: in JavaScript, there must not be a line terminator between a return and its value.
+  // Surround the JSX expression with parentheses to fix the problem.
+  return
+  // FIXME: a JSX template must have a single parent.
+  // Put the <p> and the <button> elements in a top-level <div>
+      <p>Number of items: 0</p>
+      {['+', '-'].map(label => <button>{label}</button>)}
 }
 
-ReactDOM.render(<HelloWorld />, document.getElementById('root'));
+ReactDOM.render(<Counter />, document.getElementById('root'))
