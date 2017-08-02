@@ -21,6 +21,6 @@
   },
   "scripts": {
     "start": "webpack -d --progress --config=webpack.config.js",
-    "techio-start": "./run.sh"
+    "techio-start": "bash run.sh"
   }
 }

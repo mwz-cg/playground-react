@@ -24,12 +24,15 @@ This is not a goal that is explicitly stated on their website, but I believe tha
 
 # Your first React component
 
-This is a minimalist React application with one `Counter` component that we will use as an example. This component can be used to store a number of items and increment/decrement it. Think of the shopping cart for your favorite e-commerce website.
+The first code snippet on the right is a minimalist React application with one `Counter` component that we will use as an example. This component can be used to store a number of items and increment/decrement it. Think of the shopping cart for your favorite e-commerce website.
+
+Click the Run button below to compile the example and render it:
 
 @[Your first React component]({
   "stubs": ["src/counter-basic.js"],
-  "command": "./run.sh counter-basic",
-  "project": "counter"
+  "command": "yarn techio-start counter-basic",
+  "project": "counter",
+  "layout": "aside"
 })
 
 After importing the `React` and `ReactDOM` modules, we define a `Counter` function. Notice anything strange?
@@ -71,7 +74,7 @@ There are also restrictions regarding attribute names (you cannot use an attribu
 
 First, if you prefer to isolate the view in a separate file, go for it: put the rendering function in its own file, and bam! there you go. Then, ask yourself: does it *really* change anything, other than having twice as many files?
 
-Then again, remember that you're not really writing HTML; JSX is just easier to use than creating elements by hand. The thing is, if you are targeting a browser (you don't have to by the way, you could build a mobile app using React native instead), at some point this is going to require one of two things: either you give the browser some fixed HTML, or you manipulate the DOM dynamically. React does the latter, it just happens to be convenient to describe the view with HTML-like syntax (JSX). If you're not happy with JSX you could very well write a completely different language that would be more like a Jade/pug template or an S-expression such as Racket's *X-expression*:
+Then again, remember that you're not really writing HTML; JSX is just easier to use than creating elements by hand. The thing is, if you are targeting a browser (you don't have to by the way, you could build a mobile app using React native instead), at some point this is going to require one of two things: either you give the browser some fixed HTML, or you manipulate the DOM dynamically. React does the latter, it just happens to be convenient to describe the view with HTML-like syntax (JSX). If you're not happy with JSX you could very well write a completely different language that would be more like a [Pug](https://pugjs.org) (formerly Jade) template or an [S-expression](https://en.wikipedia.org/wiki/S-expression) such as Racket's *[X-expression](https://docs.racket-lang.org/xml/index.html#%28def._%28%28lib._xml%2Fprivate%2Fxexpr-core..rkt%29._xexpr~3f%29%29)*:
 
 ```
 (html
