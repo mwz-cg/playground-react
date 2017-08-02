@@ -1,6 +1,9 @@
 #!/bin/bash
 
-npm start -- --env.name=$1
-
-echo "TECHIO> success"
-echo "TECHIO> open -p 3000 /index.html"
+if npm start -- --env.name=$1 ; then
+  echo "🤖 Build success!"
+  echo "TECHIO> success"
+  echo "TECHIO> open --static-dir /project/target/dist /index.html"
+else
+  echo "🤖 Something went wrong 😱 please look at the compilation logs"
+fi
