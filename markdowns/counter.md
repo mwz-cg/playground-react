@@ -5,7 +5,8 @@ This is a minimalist React application with one `Counter` component that we will
 @[Counter app]({
   "stubs": ["src/counter-basic.js"],
   "command": "./run.sh counter-basic",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 After importing the `React` and `ReactDOM` modules, we define a `Counter` function. Notice anything strange?
@@ -33,7 +34,8 @@ Fix the code below to follow these rules:
 @[Example of JSX]({
   "stubs": ["src/counter-jsx.js"],
   "command": "yarn techio-start -- counter-jsx",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 There are also restrictions regarding attribute names (you cannot use an attribute named `for` for the obvious reason that this is a JavaScript keyword), but we will not cover them here.
@@ -44,10 +46,11 @@ Components can have immutable state in the form of read-only properties, also kn
 
 In the example below, add an initial value to the counter with props:
 
-@[Hello World app]({
+@[Counter with props]({
   "stubs": ["src/counter-with-props.js"],
   "command": "yarn techio-start -- counter-with-props",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 So far, so good. But how do we check that the user of our component has indeed set a value for our property, and with the right type?
@@ -58,10 +61,11 @@ Enter property types. When the `propTypes` attribute is set on a component, it s
 
 Fix the following code to remove warnings:
 
-@[Hello World app]({
+@[Counter with property types]({
   "stubs": ["src/counter-with-prop-types.js"],
   "command": "yarn techio-start -- counter-with-prop-types",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 # Default property values
@@ -70,10 +74,11 @@ Props can have default values. This allows a component to have properties that a
 
 Fix the code below to add a default value to `initialCount` to remove the warning:
 
-@[Hello World app]({
+@[Counter with default props]({
   "stubs": ["src/counter-with-default-props.js"],
   "command": "yarn techio-start -- counter-with-default-props",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 # Event handling
@@ -82,10 +87,11 @@ Until now the buttons in our counter had no effect. In the following example, we
 
 Fix the code to handle clicks on the buttons to call the event handler.
 
-@[Hello World app]({
+@[Counter with event handling]({
   "stubs": ["src/counter-event-handler.js"],
   "command": "yarn techio-start -- counter-event-handler",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 # Components with class
@@ -96,10 +102,11 @@ A stateful component is typically defined as a class extending `React.Component`
 
 Add a `count` property to the state of the component in the code below.
 
-@[Hello World app]({
+@[Counter component]({
   "stubs": ["src/counter-class.js"],
   "command": "yarn techio-start -- counter-class",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 # State
@@ -108,10 +115,11 @@ To update the state of a component, the component must call the `setState` funct
 
 In the example below, implement the decrement action in the handleClick method:
 
-@[Hello World app]({
+@[Stateful counter]({
   "stubs": ["src/counter-state.js"],
   "command": "yarn techio-start -- counter-state",
-  "project": "counter"
+  "project": "counter",
+  "layout": "aside"
 })
 
 # Reference
