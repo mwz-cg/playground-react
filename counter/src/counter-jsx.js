@@ -10,7 +10,7 @@ function Counter() {
   return
       <p>Number of items: 0</p>
       {['+', '-'].map(label =>
-        // TODO: add a key property to the <button> with value = {label}
+        // TODO: add a key property to the <button> whose value is {label}
         <button>{label}</button>
       )}
 }

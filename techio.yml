@@ -1,9 +1,17 @@
-title : How to React (quickly)
+title: How to React (quickly)
 plan:
   - title: Introduction
-    statement: markdowns/introduction.md
-  - title: Counter
-    statement: markdowns/counter.md
+    statement: markdowns/1-introduction.md
+  - title: Props
+    statement: markdowns/2-props.md
+  - title: State
+    statement: markdowns/3-state.md
+  - title: Lifecycle
+    statement: markdowns/4-lifecycle.md
+  - title: Advanced concepts
+    statement: markdowns/5-advanced.md
+  - title: Conclusion
+    statement: markdowns/6-conclusion.md
 
 projects:
   counter:
