@@ -1,6 +1,8 @@
+// { autofold
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+// }
 
 // destructure props directly into variables
 const Counter = ({initialCount, labels}) =>

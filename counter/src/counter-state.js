@@ -1,4 +1,4 @@
-// autofold {
+// { autofold
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
@@ -35,7 +35,7 @@ class Counter extends Component {
     )
   }
 }
-// autofold {
+// { autofold
 Counter.propTypes = {
   initialCount: PropTypes.number.isRequired,
   labels: PropTypes.objectOf(PropTypes.string).isRequired
@@ -44,6 +44,6 @@ Counter.propTypes = {
 Counter.defaultProps = {
   initialCount: 0
 }
-
 // }
+
 ReactDOM.render(<Counter labels={{INCREMENT: '+', DECREMENT: '-'}} />, document.getElementById('root'))
