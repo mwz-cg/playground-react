@@ -4,7 +4,7 @@ This is a minimalist React application with one `Counter` component that we will
 
 @[Counter app]({
   "stubs": ["src/counter-basic.js"],
-  "command": "yarn techio-start -- counter-basic",
+  "command": "./run.sh counter-basic",
   "project": "counter"
 })
 

@@ -1,9 +1,6 @@
 #!/bin/bash
 
-main_app=${1:-MainApp}
-
-cp src/${main_app}.js src/index.js
+npm start -- --env.name=$1
 
 echo "TECHIO> success"
 echo "TECHIO> open -p 3000 /index.html"
-npm start
