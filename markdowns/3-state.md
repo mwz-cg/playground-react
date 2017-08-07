@@ -6,7 +6,7 @@ Fix the first snippet on the right to handle clicks on the buttons to call the e
 
 @[Counter with event handling]({
   "stubs": ["src/counter-event-handler.js"],
-  "command": "yarn techio-start -- counter-event-handler",
+  "command": "./run.sh counter-event-handler",
   "project": "counter",
   "layout": "aside"
 })
@@ -21,7 +21,7 @@ Add a `count` property to the state of the component in the `counter-class` code
 
 @[Counter class]({
   "stubs": ["src/counter-class.js"],
-  "command": "yarn techio-start -- counter-class",
+  "command": "./run.sh counter-class",
   "project": "counter",
   "layout": "aside"
 })
@@ -34,7 +34,7 @@ In the last code snippet, implement the decrement action in the handleClick meth
 
 @[Stateful counter]({
   "stubs": ["src/counter-state.js"],
-  "command": "yarn techio-start -- counter-state",
+  "command": "./run.sh counter-state",
   "project": "counter",
   "layout": "aside"
 })

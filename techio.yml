@@ -17,4 +17,4 @@ projects:
   counter:
     root: counter
     runner: node:8
-    buildCommand: yarn install
+    buildCommand: npm install

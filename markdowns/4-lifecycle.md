@@ -16,7 +16,7 @@ We have already used `setState` to update the state of a component, the only oth
 
 @[Counter fetch]({
   "stubs": ["src/counter-did-mount.js"],
-  "command": "yarn techio-start -- counter-did-mount",
+  "command": "./run.sh counter-did-mount server",
   "project": "counter",
   "layout": "aside"
 })

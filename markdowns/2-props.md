@@ -6,7 +6,7 @@ In the first example on the right, add an initial value to the counter with prop
 
 @[Counter with props]({
   "stubs": ["src/counter-with-props.js"],
-  "command": "yarn techio-start -- counter-with-props",
+  "command": "./run.sh counter-with-props",
   "project": "counter",
   "layout": "aside"
 })
@@ -21,7 +21,7 @@ Fix the `counter-with-prop-types` code to remove warnings:
 
 @[Counter with property types]({
   "stubs": ["src/counter-with-prop-types.js"],
-  "command": "yarn techio-start -- counter-with-prop-types",
+  "command": "./run.sh counter-with-prop-types",
   "project": "counter",
   "layout": "aside"
 })
@@ -34,7 +34,7 @@ Fix the code `counter-with-default-props` to add a default value to `initialCoun
 
 @[Counter with default props]({
   "stubs": ["src/counter-with-default-props.js"],
-  "command": "yarn techio-start -- counter-with-default-props",
+  "command": "./run.sh counter-with-default-props",
   "project": "counter",
   "layout": "aside"
 })

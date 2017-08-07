@@ -20,7 +20,7 @@
     "react-dom": "15.6.1"
   },
   "scripts": {
-    "start": "webpack -d --progress --config=webpack.config.js",
-    "techio-start": "bash run.sh"
+    "start": "node index.js",
+    "webpack": "webpack -d --progress --config=webpack.config.js"
   }
 }

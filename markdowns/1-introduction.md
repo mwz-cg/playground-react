@@ -30,7 +30,7 @@ Click the Run button below to compile the example and render it:
 
 @[Your first React component]({
   "stubs": ["src/counter-basic.js"],
-  "command": "yarn techio-start counter-basic",
+  "command": "./run.sh counter-basic",
   "project": "counter",
   "layout": "aside"
 })
@@ -63,7 +63,7 @@ Fix the code below to follow these rules:
 
 @[Example of JSX]({
   "stubs": ["src/counter-jsx.js"],
-  "command": "yarn techio-start -- counter-jsx",
+  "command": "./run.sh counter-jsx",
   "project": "counter",
   "layout": "aside"
 })
