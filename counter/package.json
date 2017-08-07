@@ -15,12 +15,13 @@
     "webpack": "3.4.1"
   },
   "dependencies": {
+    "express": "4.15.4",
     "prop-types": "15.5.10",
     "react": "15.6.1",
     "react-dom": "15.6.1"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index",
     "webpack": "webpack -d --progress --config=webpack.config.js"
   }
 }

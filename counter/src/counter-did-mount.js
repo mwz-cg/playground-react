@@ -28,6 +28,8 @@ class Counter extends Component {
   // }
 
   async componentDidMount() {
+    console.log(await fetch('http://localhost:3000/items').then(response => response.text()));
+
     let response = await fetch('http://localhost:3000/items');
     let result = await response.json();
     this.setState((state) => { count: result });
