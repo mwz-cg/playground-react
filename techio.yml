@@ -6,10 +6,10 @@ plan:
     statement: markdowns/2-props.md
   - title: State
     statement: markdowns/3-state.md
+  - title: Forms
+    statement: markdowns/4-forms.md
   - title: Lifecycle
-    statement: markdowns/4-lifecycle.md
-  - title: Advanced concepts
-    statement: markdowns/5-advanced.md
+    statement: markdowns/5-lifecycle.md
   - title: Conclusion
     statement: markdowns/6-conclusion.md
 
