@@ -8,12 +8,13 @@ const ACTIONS = ['INCREMENT', 'DECREMENT'];
 // }
 class Counter extends Component {
 
-  // { autofold
   constructor(props) {
     super(props);
     this.state = {count: props.initialCount};
+
+    // TODO: bind handleChange to this
+    this.handleChange = this.handleChange;
   }
-  // }
 
   // { autofold
   handleClick(action) {
@@ -27,36 +28,37 @@ class Counter extends Component {
   }
   // }
 
-  // TODO: use lifecycle method
-  async loadCount() {
-    let response = await fetch('/count')
-    let result = await response.json()
-    // TODO set count from result
+  handleChange(event) {
+    let count = Number.parseInt(event.target.value)
+    if (Number.isInteger(count)) {
+      this.setState({count})
+    }
   }
 
   render() {
     return (
-      <div>
-        <p>Number of items: {this.state.count}</p>
+      <form>
+        <label>
+          Number of items:
+          {/* TODO: set the onChange prop to this.handleChange */}
+          <input type="text" value={this.state.count} />
+        </label>
         {ACTIONS.map(action =>
-          <button key={action} onClick={() => this.handleClick(action)}>
+          <button type="button" key={action} onClick={() => this.handleClick(action)}>
             {this.props.labels[action]}
           </button>)}
-      </div>
+      </form>
     )
   }
 }
-// { autofold
+
 Counter.propTypes = {
   initialCount: PropTypes.number.isRequired,
   labels: PropTypes.objectOf(PropTypes.string).isRequired
 }
-// }
 
-// { autofold
 Counter.defaultProps = {
   initialCount: 0
 }
-// }
 
 ReactDOM.render(<Counter labels={{INCREMENT: '+', DECREMENT: '-'}} />, document.getElementById('root'))

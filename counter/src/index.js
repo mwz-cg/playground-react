@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 
-app.use(express.static('/project/target/dist'))
+app.use(express.static(path.join(__dirname, '../dist')))
 
-app.get('/items/count', function (req, res) {
+app.get('/count', function (req, res) {
   res.json(18)
 })
 

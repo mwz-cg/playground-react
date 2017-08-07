@@ -14,9 +14,13 @@ We have already used `setState` to update the state of a component, the only oth
 
 # Load the initial number of items
 
+Fix the `counter-did-mount` example so that it sets the count after the component is mounted.
+
 @[Counter fetch]({
   "stubs": ["src/counter-did-mount.js"],
   "command": "./run.sh counter-did-mount server",
   "project": "counter",
   "layout": "aside"
 })
+
+An aside note: any pending request should normally be cancelled in `componentWillUnmount`, unfortunately at this time this is not possible with `fetch`. Until `abort` is standardized, if you need to cancel a request when your component unmounts you will have to use XMLHttpRequest.
