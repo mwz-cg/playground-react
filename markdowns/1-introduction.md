@@ -49,7 +49,7 @@ You can also see JSX in the last line here, as the first argument to `ReactDOM.r
 ReactDOM.render(<Counter />, document.getElementById('root'));
 ```
 
-In fact, a JSX element can be any classic HTML-like element like `<p>` or `<div>`, or a React component, like our `<Counter />` element here.
+In fact, a JSX element can be any classic HTML-like element like `<p>` or `<div>`, or a React component, like our `<Counter />` element here. This allows components to instantiate other components.
 
 You can use arbitrary JavaScript expressions in JSX by putting them between brackets. In contrast to templates, there are no special constructs to conditionally show/hide an element or iterate over a collection of elements; you do all that with JavaScript natively.
 

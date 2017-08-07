@@ -19,7 +19,7 @@ A stateful component is typically defined as a class extending `React.Component`
 
 Add a `count` property to the state of the component in the `counter-class` code.
 
-@[Counter component]({
+@[Counter class]({
   "stubs": ["src/counter-class.js"],
   "command": "yarn techio-start -- counter-class",
   "project": "counter",

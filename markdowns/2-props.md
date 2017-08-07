@@ -38,3 +38,9 @@ Fix the code `counter-with-default-props` to add a default value to `initialCoun
   "project": "counter",
   "layout": "aside"
 })
+
+# Props and hierarchical components
+
+A child component receive props from its parent component based on the parent's state. Whenever the parent's state changes, the child receives new props and if these are different from the child's current props, this triggers a render of the child.
+
+The parent component has a list of its children stored in the `props.children` opaque property. To count or iterate on its children, you need to use the `count`, `map`, `forEach` functions of `React.Children`.
