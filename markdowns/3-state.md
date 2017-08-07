@@ -26,10 +26,6 @@ Add a `count` property to the state of the component in the `counter-class` code
   "layout": "aside"
 })
 
-# Event handling with this
-
-Note that you need to bind `this.handleChange` to `this` in the constructor so you can refer to the `handleChange` function directly. Otherwise you would have to use `onChange={event => this.handleClick(event)}`, which has the unfortunate effect of creating a different callback every time the component renders.
-
 # State
 
 To update the state of a component, the component must call the `setState` function with an argument that is the update function. The update function takes the current state and the props as arguments, and must return an object with the properties of the state that should be updated to a new value. Other properties remain the same.

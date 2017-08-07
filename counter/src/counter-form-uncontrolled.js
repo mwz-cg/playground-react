@@ -28,7 +28,7 @@ class Counter extends Component {
   // }
 
   setCount(event) {
-    let count = Number.parseInt(this.input.value)
+    let count = Number.parseInt(/* TODO: use the value of this.input here */)
     if (Number.isInteger(count)) {
       this.setState({count})
     }
@@ -47,7 +47,7 @@ class Counter extends Component {
         <div>
           <label>
             Set number of items:
-            <input type="text" ref={(input) => this.input = input} />
+            <input type="text" ref={(input) => void 0 /* TODO: save input to this.input */} />
           </label>
           <button type="button" onClick={this.setCount}>Click me</button>
         </div>
