@@ -9,7 +9,6 @@ fi
 
 if [ -n "$2" ]; then
   npm start
-  echo "TECHIO> open --port 3000"
 else
   echo "TECHIO> open --static-dir /project/target/dist /index.html"
 fi

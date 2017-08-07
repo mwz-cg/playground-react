@@ -1,10 +1,14 @@
 const express = require('express')
 const app = express()
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+app.use(express.static('/project/target/dist'))
+
+app.get('/items/count', function (req, res) {
+  res.json(18)
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+const PORT = 3000
+app.listen(PORT, function () {
+  console.log(`Example app listening on port ${PORT}!`)
+  console.log(`TECHIO> open --port ${PORT} /index.html`)
 })
