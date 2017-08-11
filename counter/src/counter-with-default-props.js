@@ -6,11 +6,9 @@ import PropTypes from 'prop-types'
 
 // destructure props directly into variables
 const Counter = (props) => {
-  // { autofold
   // check PropTypes explicitly because we are using the production version of React
   // normally in development this is done for you by React
   PropTypes.checkPropTypes(Counter.propTypes, props, 'prop', 'Counter');
-  // }
 
   let {initialCount, labels} = props;
   return (
