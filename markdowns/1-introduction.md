@@ -1,18 +1,16 @@
-This playground aims to show you how to React quickly by covering what I consider to be the most important aspects of the library in a straight to the point manner. This chapter is an introduction to React.
+This playground aims to show you how to write a React application quickly by covering what I consider to be the most important aspects of the library in a straight to the point manner. This chapter is an introduction to React.
 
-# Differences with frameworks
+# Why learn React?
 
-When you look for comparisons between front-end frameworks, React is often compared with frameworks such as AngularJS (1.x), Angular (2/4), Vue, Ember, etc. that are using some variation of MVC/MVP/MVW (Model-View-Controller/Presenter/Whatever).
+When you look for comparisons between front-end frameworks, React is often compared with frameworks such as AngularJS (1.x), Angular (2/4), Vue, Ember, etc. that are using some variation of MVC/MVP/MVW (Model-View-Controller/Presenter/Whatever). This is not entirely fair, given that React is not really a framework, but instead "a JavaScript library for building user interfaces". This follows the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy): do one thing, and do it well. This also means that when you build an application with React, you will typically use React + other libraries, which is why you often hear about React + Redux for instance.
 
-This is not entirely fair, given that React is not really a framework, but instead "a JavaScript library for building user interfaces". This follows the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy): do one thing, and do it well. This also means that when you build an application with React, you will typically use React + other libraries, which is why you often hear about React + Redux for instance.
-
-In this playground you will learn why React is often praised, and sometimes hated.
+The fact that React is "just" a library makes it very compelling to learn: the API surface is quite small, and you can quickly decide if you like it or not. The functional nature of React components, with local state, immutable parameters, and no side effects, combined with a unidirectional data flow, lead to better code and fewer bugs and is interesting to learn if you haven't used functional programming before. Finally, the community around React is very active and it has a rich ecosystem that you can benefit from and contribute to.
 
 # Principles of React
 
 ## Component-based
 
-A user interface in React is built with components. A component has its own mutable state, and it cannot modify the state of other components. It now seems logical, but remember that when React was released the most used framework was AngularJS with 2-way binding by default. A component can include other components and specify values based on its own state.
+A user interface in React is built with components. A component has its own mutable state, and it cannot modify the state of other components. It now seems logical, but remember that when React was released the most used framework was AngularJS with 2-way binding by default, and components written as directives modifying the DOM (components were only introduced in AngularJS 1.5 released in early 2016). A React component can include other components and specify values based on its own state.
 
 ## Virtual DOM
 
