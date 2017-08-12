@@ -24,7 +24,7 @@ This is not a goal that is explicitly stated on their website, but I believe tha
 
 The first code snippet on the right is a minimalist React application with one `Counter` component that we will use as an example. This component can be used to store a number of items and increment/decrement it. Think of the shopping cart for your favorite e-commerce website.
 
-Click the Run button below to compile the example and render it:
+Click the Run button below to compile the example given in the file `counter-basic.js` and render it:
 
 @[Your first React component]({
   "stubs": ["src/counter-basic.js"],
@@ -57,7 +57,7 @@ There are three things to keep in mind when using JSX:
 * a JSX expression is just syntactic sugar that is transformed at build time into a JavaScript expression. This means that if you want to have a newline between a `return` statement and the JSX expression for readability, you must surround the JSX expression with parentheses. Otherwise, as stated in the ECMAScript standard, Automatic Semicolon Insertion will insert a semicolon before your expression, because there should not be a line terminator between a `return` statement and its value (if it has one).
 * when you generate a list of elements, each element should have a `key` property with a distinct value, for performance reasons. If you don't do that, the code will still compile, but you'll see warnings in the console.
 
-Fix the code below to follow these rules:
+Fix the code of the file `counter-jsx.js` on the second code tab to to follow these rules:
 
 @[Example of JSX]({
   "stubs": ["src/counter-jsx.js"],
