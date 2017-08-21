@@ -1,6 +1,6 @@
 # Properties
 
-Components can have immutable state in the form of read-only properties, also known as *props*. To have props, a component declares an additional `props` argument that is a plain old JavaScript object. Property names and associated values of props are specified in JSX with the `name=value` syntax when the component is instantiated. The value must be either a string (in quotes) or a JavaScript value in braces.
+Components can have an immutable state in the form of read-only properties, also known as *props*. To have props, a component declares an additional `props` argument that is a plain old JavaScript object. Property names and associated values of props are specified in JSX with the `name=value` syntax when the component is instantiated. The value must be either a string (in quotes) or a JavaScript value in braces.
 
 In the first example on the right, add an initial value to the counter with props:
 
