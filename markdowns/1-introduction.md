@@ -14,7 +14,7 @@ A user interface in React is built with components. A component has its own muta
 
 ## Virtual DOM
 
-React uses a virtual DOM rather than the DOM directly to optimize rendering. This is because operations on the DOM usually involve many steps (layout, styling) in addition to the tree operations themselves. React determines when a component needs rendering
+React uses a virtual DOM rather than the DOM directly to optimize rendering. This is because operations on the DOM usually involve many steps (layout, styling) in addition to the tree operations themselves. React determines when a component needs rendering.
 
 ## Simplicity
 
